@@ -1,0 +1,15 @@
+/* Smooth premium rotating Earth */
+.earth-css {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff 5%, #90d8ff 35%, #0ea5e9 80%);
+  box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.25), 
+              0 0 40px rgba(14, 165, 233, 0.5);
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
